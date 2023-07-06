@@ -29,15 +29,21 @@ function sommaNumeri(numberofelements) {
 //Utilizzare la funzione sommaNumeri precedentemente creata per calcolare la media dei numeri che vanno chiesti all'utente attraverso dei prompt.
 //Potete ad esempio provare ad usare questo programma per inserire N voti di scuola e farvi restituire qual è la media di tutti i voti inseriti!
 
-//let numberofelements= parseInt(prompt("quanti numeri vuoi inserire?"));
-let arrayofnumbers =[];
-function mediaAritmetica (arrayofnumbers) {
-function sommaNumeri(numberofelements) {
-    for (let i=0; i<numberofelements; i++ ) {
-        let sommaNumeri = parseInt(prompt("inserisci i numeri"));
-        arrayofnumbers.push 
-        let mediaNumeri= (sommaNumeri%numberofelements)
+//let numberofelementi= parseInt(prompt("quanti numeri vuoi inserire?"));
+let miasomma = sommaNumeri(numberofelementi);
+console.log (miaSomma);
+
+function sommaNumeri(numberofelementi) {
+
+    let arrayofnumbers=[];
+    let somma= 0
+
+    for (let i=0; i<numberofelementi; i++ ) {
+        let numero = parseInt(prompt("inserisci un numero"));
+        arrayofnumbers.push (numero)
+        somma = somma + numero;
+        media = somma % numberofelementi;
     }
-    return mediaNumeri;
+    return media;
     }
 }
